@@ -1,0 +1,14 @@
+//Abstracts
+@use "./styles/abstracts/variables";
+@use "./styles/abstracts/mediaQueries";
+@use "./styles/abstracts/utilities";
+
+//Base
+@use "./styles/base/reset";
+@use "./styles/base/typography";
+
+//Layout
+@use "./styles/layout/navLayout";
+
+// pages
+@use "./styles/pages/home";

@@ -1,0 +1,160 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mediaQueries" as *;
+
+.nav-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  padding: 10px 20px;
+  margin: 0;
+  width: 100%;
+  background-color: $clr-neutral-100;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+
+  .button {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    border: 1px solid $clr-neutral-600;
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+
+  @include md {
+    padding: 1.5rem 2rem;
+  }
+
+  ul {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 3.9rem;
+    backdrop-filter: blur(10px); // Add blur effect
+    -webkit-backdrop-filter: blur(10px); // For Safari support
+    @include lg {
+      position: relative;
+      top: 0;
+      flex-direction: row;
+      justify-content: space-around;
+      padding-bottom: 0;
+      gap: 1rem;
+      background-color: $clr-neutral-100;
+    }
+    li {
+      width: 100%;
+      text-align: center;
+      @include lg {
+        width: auto;
+      }
+
+      a {
+        display: block;
+        line-height: 4rem;
+        text-decoration: none;
+        font-size: $fs-600;
+        font-weight: $fw-medium;
+        color: $clr-neutral-900;
+        @include lg {
+          display: inline;
+          line-height: normal;
+        }
+        &:hover {
+          background-color: $clr-primary-500;
+          color: $clr-neutral-100;
+          text-decoration: underline;
+          @include md {
+            color: $clr-primary-400;
+            background-color: $clr-neutral-100;
+          }
+        }
+      }
+    }
+    .login-button1 {
+      background-color: $clr-neutral-100;
+      border: 1px solid $clr-primary-400;
+      &:hover {
+        color: $clr-primary-400;
+        border-color: $clr-primary-400;
+      }
+    }
+    .sign-up-button1 {
+      display: inline-block;
+      overflow: hidden;
+      background-color: $clr-primary-400;
+      color: $clr-neutral-100;
+      &:hover {
+        background-color: $clr-primary-500;
+      }
+    }
+    .login-button1,
+    .sign-up-button1 {
+      display: flex;
+    }
+    @include md {
+      .login-button1,
+      .sign-up-button1 {
+        display: none;
+      }
+    }
+
+    @include lg {
+      display: flex;
+    }
+  }
+
+  .navbar-menu.open {
+    display: flex;
+  }
+  .login-button {
+    background-color: $clr-neutral-100;
+    border: 1px solid $clr-primary-400;
+  }
+
+  .login-button,
+  .sign-up-button {
+    display: none;
+  }
+  .sign-up-button {
+    background-color: $clr-primary-400;
+    color: $clr-neutral-100;
+    &:hover {
+      background-color: $clr-primary-500;
+    }
+  }
+  .login-button {
+    &:hover {
+      color: $clr-primary-400;
+      border-color: $clr-primary-400;
+    }
+  }
+
+  @include md {
+    .login-button,
+    .sign-up-button {
+      display: flex;
+    }
+  }
+  #humburger-icon {
+    display: flex;
+    @include lg {
+      display: none;
+    }
+  }
+  .dropdown {
+    .dropdown-toggle {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      cursor: pointer;
+    }
+  }
+}
