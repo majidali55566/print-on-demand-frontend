@@ -11,21 +11,12 @@
 .flex-column {
   flex-direction: column;
 }
-
 .flex-wrap {
   flex-wrap: wrap;
 }
 
-.flex-nowrap {
-  flex-wrap: nowrap;
-}
-
 .justify-start {
   justify-content: flex-start;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -38,10 +29,6 @@
 
 .justify-around {
   justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
 }
 
 .items-center {
@@ -58,6 +45,8 @@
 .gap-500 {
   gap: 2rem;
 }
+
+// typography
 
 .fs-300 {
   font-size: $fs-300;
@@ -76,4 +65,14 @@
 }
 .fs-800 {
   font-size: $fs-800;
+}
+
+.fw-regular {
+  font-weight: $fw-regular;
+}
+.fw-md {
+  font-weight: $fw-medium;
+}
+.fw-bold {
+  font-weight: $fw-bold;
 }

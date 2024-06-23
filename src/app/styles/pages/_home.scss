@@ -2,20 +2,24 @@
 @use "../abstracts/mediaQueries" as *;
 .home-page {
   .intro-section {
-    display: grid;
+    padding-inline: $app-padding-sm;
+    padding-bottom: 3rem;
     padding-top: 6rem;
+    display: grid;
     gap: 2rem;
-    padding-inline: 20px;
     @include md {
+      padding-inline: $app-padding-md;
       padding-top: 8rem;
-      padding-inline: 2.5rem;
     }
-    @include lg {
+    @media (min-width: 900px) {
       display: flex;
       gap: 4rem;
+    }
+    @include lg {
+      padding-inline: $app-padding-lg;
       padding-top: 10rem;
     }
-    background: linear-gradient(to top, $clr-neutral-400, hsl(0, 0%, 100%));
+    background: linear-gradient(to top, $clr-primary-300, hsl(0, 0%, 100%));
     h1 {
       color: $clr-primary-400;
       line-height: 2.7rem;
@@ -28,6 +32,181 @@
       @include lg {
         font-size: 4rem;
         line-height: 3.5rem;
+      }
+    }
+
+    .start-now-buttons {
+      button {
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border: none;
+        background-color: $clr-primary-400;
+        border-radius: 0.5rem;
+        color: $clr-neutral-100;
+        cursor: pointer;
+
+        .arrow-icon {
+          transition: transform 0.3s ease;
+        }
+
+        &:hover {
+          background-color: $clr-primary-500;
+
+          .arrow-icon {
+            transform: translateX(5px);
+          }
+        }
+      }
+    }
+
+    .benefits {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(2, 1fr);
+      span {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        color: $clr-neutral-900;
+        svg {
+          color: $clr-primary-400;
+        }
+      }
+    }
+
+    .hero-image {
+      display: none;
+      @media (min-width: 900px) {
+        display: flex;
+      }
+      border-radius: 1rem;
+      box-shadow: 4px 5px 5px $clr-neutral-900;
+    }
+  }
+  .business-solution-section {
+    padding: 3rem $app-padding-sm;
+
+    @include md {
+      padding: 4rem $app-padding-md;
+    }
+    @include lg {
+      padding: $app-padding-lg;
+    }
+    .process-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      gap: 2rem;
+      max-width: 20rem;
+      img {
+        border-radius: 0.5rem;
+      }
+    }
+  }
+
+  .discover-our-product {
+    background-color: $clr-primary-300;
+    padding: 3rem $app-padding-sm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    @include md {
+      padding: 4rem $app-padding-md;
+    }
+    @include lg {
+      padding: $app-padding-lg;
+    }
+  }
+  .work-with-us {
+    display: grid;
+    gap: 2rem;
+    padding: 3rem $app-padding-sm;
+    @include md {
+      padding: 4rem $app-padding-md;
+    }
+    @include lg {
+      padding: $app-padding-lg;
+    }
+    .our-collobrators {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 1rem;
+      @include md {
+        justify-content: center;
+      }
+      @include lg {
+        flex-wrap: nowrap;
+      }
+      .card {
+        background-color: $clr-primary-300;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+        @include md {
+          max-width: 20rem;
+          align-items: center;
+          justify-content: center;
+        }
+        &:hover {
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
+  }
+  .we-have-your-desires {
+    background-color: $clr-primary-300;
+    padding: 3rem $app-padding-sm;
+    display: grid;
+    gap: 2rem;
+    @include md {
+      padding: 4rem $app-padding-md;
+    }
+    @include lg {
+      padding: $app-padding-lg;
+    }
+    .we-offer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+
+      gap: 2rem;
+      .product-card {
+        display: grid;
+        gap: 1rem;
+        background-color: $clr-neutral-100;
+        border-radius: 0.5rem;
+        max-width: 17rem;
+        box-shadow: $box-shadow-400;
+        img {
+          background-color: #91a8ad;
+          border-radius: 0.5rem;
+          object-fit: cover;
+        }
+        .random {
+          padding: 1rem;
+          button {
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 0.5rem;
+            background-color: $clr-primary-400;
+            font-weight: $fw-medium;
+            &:hover {
+              background-color: $clr-primary-500;
+            }
+          }
+        }
       }
     }
   }

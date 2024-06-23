@@ -1,3 +1,4 @@
+$clr-primary-300: hsl(184, 50%, 95%);
 $clr-primary-400: hsl(184, 50%, 55%);
 $clr-primary-500: hsl(184, 50%, 40%);
 
@@ -22,3 +23,9 @@ $fs-800: 1.5rem; // 24px
 $fw-regular: 400;
 $fw-medium: 500;
 $fw-bold: 800;
+
+$app-padding-sm: 1.25rem;
+$app-padding-md: 2.5rem;
+$app-padding-lg: 5rem;
+
+$box-shadow-400: 0 5px 10px rgba(0, 0, 0, 0.12);

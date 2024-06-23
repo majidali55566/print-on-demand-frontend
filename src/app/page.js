@@ -6,16 +6,17 @@ export default function Home() {
     <div className="home-page">
       <Layout>
         <section className="intro-section">
-          <div>
+          <div className="d-flex flex-column gap-500">
             <h1>Create and sell custom printed products</h1>
             <p className="fs-700">
-              Easy to design, rest assured to sell Your best print on demand
-              dropshipping & fullfillment partner
+              Effortlessly design and confidently sell with your top
+              print-on-demand dropshipping and fulfillment partner.
             </p>
-            <div>
+            <div className="start-now-buttons d-flex gap-400">
               <button>
                 Start now
                 <svg
+                  className="arrow-icon"
                   width="1rem"
                   class="w-5 h-5 ml-2 -mr-1"
                   fill="currentColor"
@@ -45,76 +46,253 @@ export default function Home() {
             </div>
             <div className="benefits">
               <span>
-                <svg
-                  width="1.5rem"
-                  class="flex-shrink-0 w-5 h-5 text-primary-500 dark:text-primary-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                <Image src="/svg/correct.svg" width="32" height="32"></Image>
                 100% Free to use
               </span>
               <span>
-                <svg
-                  width="1.5rem"
-                  class="flex-shrink-0 w-5 h-5 text-primary-500 dark:text-primary-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                <Image src="/svg/correct.svg" width="32" height="32"></Image>
                 No order minimums
               </span>
               <span>
-                <svg
-                  width="1.5rem"
-                  class="flex-shrink-0 w-5 h-5 text-primary-500 dark:text-primary-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                <Image src="/svg/correct.svg" width="32" height="32"></Image>
                 Print on Demand
               </span>
               <span>
-                <svg
-                  width="1.5rem"
-                  class="flex-shrink-0 w-5 h-5 text-primary-500 dark:text-primary-500"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                    clip-rule="evenodd"
-                  ></path>
-                </svg>
+                <Image src="/svg/correct.svg" width="32" height="32"></Image>
                 100% Moroccan
               </span>
             </div>
           </div>
           <Image
-            src="/images/hero_image.webp"
+            className="hero-image"
+            src="/images/hero-image1.webp"
             width={400}
+            alt="hero image"
             height={400}
           ></Image>
+        </section>
+        <section className="business-solution-section">
+          <div className="d-flex flex-column gap-400 items-center">
+            <h2 className="fw-bold">
+              Tailored to meet your business requirements like yours
+            </h2>
+            <p className="fs-700">
+              Explore Brand Name, your premier solution for leveraging
+              technology, innovation, and resources to generate enduring value
+              and drive economic growth.
+            </p>
+          </div>
+          <div className="d-flex flex-wrap gap-500">
+            <div className="process-card">
+              <Image
+                src="/images/custom-product.webp"
+                width={350}
+                height={400}
+              ></Image>
+              <div>
+                <h3 className="clr-primary-400">Be product designer</h3>
+                <p>
+                  Design it, build it, launch it. Whether you're a novice or an
+                  expert designer, easily create and personalize a variety of
+                  products with just a few clicks.
+                </p>
+              </div>
+            </div>
+            <div className="process-card">
+              <Image
+                src="/images/custom-product1.jpg"
+                width={350}
+                height={400}
+              ></Image>
+              <div>
+                <h3 className="clr-primary-400">Be seller</h3>
+                <p>
+                  Design it, build it, launch it. Whether you're a novice or an
+                  expert designer, easily create and personalize a variety of
+                  products with just a few clicks.
+                </p>
+              </div>
+            </div>
+            <div className="process-card">
+              <Image
+                src="/images/box-packedd.png"
+                width={350}
+                height={400}
+              ></Image>
+              <div>
+                <h3 className="clr-primary-400">We handle</h3>
+                <p>
+                  Design it, build it, launch it. Whether you're a novice or an
+                  expert designer, easily create and personalize a variety of
+                  products with just a few clicks.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="discover-our-product">
+          <div className="d-flex flex-column gap-400">
+            <h2 className="fw-bold">Discover Our Products and Services</h2>
+            <p className="fs-700">
+              Watch our video to learn more about our products and services. We
+              provide high-quality custom printed products that you'll love!
+            </p>
+          </div>
+          <div>
+            <div className="video-responsive">
+              <iframe
+                height="315"
+                src="https://www.youtube.com/embed/dJQn4DqzMVQ?si=BVq_THWPY0IKTfIn"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </section>
+        <section className="work-with-us">
+          <div className="d-flex flex-column gap-400 ">
+            <h2 className="fw-bold">Who can work with us?</h2>
+            <p className="fs-700">
+              Tailored for innovators and digital artists eager to leave their
+              imprint
+            </p>
+          </div>
+          <div className="our-collobrators">
+            <div className="card">
+              <Image
+                src="/images/work-from-home.png"
+                width={250}
+                height={230}
+              ></Image>
+
+              <h3>Working From Home</h3>
+              <p>
+                Perfect for those looking to personalize their workspace or
+                equipment.
+              </p>
+            </div>
+            <div className="card">
+              <Image
+                src="/images/businesman.png"
+                width={250}
+                height={270}
+              ></Image>
+
+              <h3>Online Entrepreneurs</h3>
+              <p>
+                Ideal for online entrepreneurs looking to expand their product
+                offerings with distinctive items.
+              </p>
+            </div>
+            <div className="card">
+              <Image
+                src="/images/influencer2.png"
+                width={250}
+                height={280}
+              ></Image>
+
+              <h3>Influencer</h3>
+              <p>
+                Tailored for influencers aiming to generate revenue from their
+                personal brand with personalized merchandise
+              </p>
+            </div>
+            <div className="card">
+              <Image src="/images/brands.png" width={250} height={290}></Image>
+
+              <h3>Brands</h3>
+              <p>
+                Perfect for businesses aiming to expand their reach with branded
+                merchandise.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section className="we-have-your-desires">
+          <div>
+            <h2 className="fw-bold">Anything you want, we have it!</h2>
+            <p>
+              We offer a wide array of customizable products tailored to our
+              customers' distinct needs and preferences.
+            </p>
+          </div>
+          <div className="we-offer">
+            <div className="product-card">
+              <Image
+                src="/images/oversize-hoodie.png"
+                alt="oversize-hoodie"
+                width={300}
+                height={200}
+              ></Image>
+              <div className="random d-flex flex-column gap-400">
+                <h3>Over Sized Hoodie</h3>
+                <button>Start Designing</button>
+              </div>
+            </div>
+            <div className="product-card">
+              <Image
+                src="/images/oversize-t-shirt.jpg"
+                alt="oversize-hoodie"
+                width={300}
+                height={200}
+              ></Image>
+              <div className="random d-flex flex-column gap-400">
+                <h3>Over Sized t-shirt</h3>
+                <button>Start Designing</button>
+              </div>
+            </div>
+            <div className="product-card">
+              <Image
+                src="/images/uni-sex.jpg"
+                alt="oversize-hoodie"
+                width={300}
+                height={200}
+              ></Image>
+              <div className="random d-flex flex-column gap-400">
+                <h3>Poly-Cotton Unisex Oversize</h3>
+                <button>Start Designing</button>
+              </div>
+            </div>
+            <div className="product-card">
+              <Image
+                src="/images/cap.jpg"
+                alt="oversize-hoodie"
+                width={300}
+                height={200}
+              ></Image>
+              <div className="random d-flex flex-column gap-400">
+                <h3>Unisex advertising cap</h3>
+                <button>Start Designing</button>
+              </div>
+            </div>
+            <div className="product-card">
+              <Image
+                src="/images/mug.png"
+                alt="oversize-hoodie"
+                width={300}
+                height={200}
+              ></Image>
+              <div className="random d-flex flex-column gap-400">
+                <h3>Ceramic Mug</h3>
+                <button>Start Designing</button>
+              </div>
+            </div>
+            <div className="product-card">
+              <Image
+                src="/images/bag.png"
+                alt="oversize-hoodie"
+                width={300}
+                height={200}
+              ></Image>
+              <div className="random d-flex flex-column gap-400">
+                <h3>Cotton Canvas Tote Bag</h3>
+                <button>Start Designing</button>
+              </div>
+            </div>
+          </div>
         </section>
       </Layout>
     </div>
