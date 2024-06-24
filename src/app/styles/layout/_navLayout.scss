@@ -7,7 +7,11 @@
   align-items: center;
   position: fixed;
   z-index: 1000;
-  padding: 10px 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-block: 2rem;
+  padding-inline: $app-padding-sm;
   margin: 0;
   width: 100%;
   background-color: $clr-neutral-100;
@@ -23,7 +27,10 @@
   }
 
   @include md {
-    padding: 1.5rem 2rem;
+    padding-inline: $app-padding-md;
+  }
+  @include lg {
+    padding-inline: $app-padding-lg;
   }
 
   ul {
@@ -37,7 +44,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    top: 3.9rem;
+    top: 5rem;
     backdrop-filter: blur(10px); // Add blur effect
     -webkit-backdrop-filter: blur(10px); // For Safari support
     @include md {

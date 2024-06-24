@@ -4,7 +4,7 @@
   .intro-section {
     padding-inline: $app-padding-sm;
     padding-bottom: 3rem;
-    padding-top: 6rem;
+    padding-top: 9rem;
     display: grid;
     gap: 2rem;
     @include md {
@@ -189,10 +189,15 @@
         border-radius: 0.5rem;
         max-width: 17rem;
         box-shadow: $box-shadow-400;
+        overflow: hidden;
         img {
           background-color: #91a8ad;
           border-radius: 0.5rem;
           object-fit: cover;
+          transition: transform 0.3s ease-in-out;
+          &:hover {
+            transform: scale(1.05);
+          }
         }
         .random {
           padding: 1rem;
@@ -207,6 +212,32 @@
             }
           }
         }
+      }
+    }
+  }
+  .plateform-integrations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    padding: 3rem $app-padding-sm;
+    @include md {
+      padding: 4rem $app-padding-md;
+    }
+    @include lg {
+      padding: $app-padding-lg;
+    }
+    .card {
+      display: flex;
+      max-width: 20rem;
+      align-items: center;
+      box-shadow: $box-shadow-400;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      img {
+        object-fit: contain;
       }
     }
   }

@@ -1,0 +1,38 @@
+@use "../abstracts/mediaQueries" as *;
+@use "../abstracts/variables" as *;
+
+.faqs {
+  background-color: $clr-primary-300;
+  display: grid;
+  gap: 2rem;
+  padding: 3rem $app-padding-sm;
+  @include md {
+    padding: 4rem $app-padding-md;
+  }
+  @include lg {
+    padding: $app-padding-lg;
+  }
+
+  .faq-items {
+    display: grid;
+    .faq-item {
+      border-bottom: 0;
+      padding-right: 0.5rem;
+      button {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $clr-neutral-100;
+        padding: 0.5rem;
+        border: none;
+        border-top: 1px solid rgba(216, 216, 216, 0.171);
+      }
+      p {
+        padding: 2rem;
+        background-color: $clr-neutral-400;
+      }
+    }
+  }
+}

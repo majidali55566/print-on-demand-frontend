@@ -1,0 +1,46 @@
+@use "../abstracts/mediaQueries" as *;
+@use "../abstracts/variables" as *;
+.footer {
+  padding: 3rem $app-padding-sm;
+  @include md {
+    padding: 4rem $app-padding-md;
+  }
+  @include lg {
+    padding: $app-padding-lg;
+  }
+  .container {
+    display: grid;
+    gap: 2rem;
+    @include md {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .links {
+      display: grid;
+      gap: 3rem;
+      @include md {
+        display: flex;
+        gap: 2rem;
+      }
+      .quick-links,
+      .quick-links,
+      .resources,
+      .conditions {
+        display: grid;
+        gap: 0.5rem;
+      }
+      .quick-links a,
+      .resources a,
+      .conditions a {
+        text-decoration: none;
+        color: $clr-neutral-900;
+        display: flex;
+        &:hover {
+          text-decoration: underline;
+        }
+        @include md {
+          display: grid;
+        }
+      }
+    }
+  }
+}

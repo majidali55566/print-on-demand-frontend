@@ -7,6 +7,10 @@
 @use "./styles/base/reset";
 @use "./styles/base/typography";
 
+//Components
+@use "./styles/components/faqs";
+@use "./styles/components/footer";
+
 //Layout
 @use "./styles/layout/navLayout";
 

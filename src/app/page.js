@@ -1,6 +1,8 @@
 import Layout from "./Components/Layout";
 import Image from "next/image";
 import "./main.scss";
+import FAQ from "./Components/FAQ.jsx";
+import Footer from "./Components/Footer";
 export default function Home() {
   return (
     <div className="home-page">
@@ -294,6 +296,64 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="plateform-integrations">
+          <div className="d-flex align-center flex-column justify-center">
+            <h2 className="fw-bold text-center">Plateform integrations</h2>
+            <p className="fs-700 text-center">
+              Integrate your business seamlessly with the platforms you love.
+            </p>
+          </div>
+          <div className="d-flex align-center flex-wrap gap-500 justify-center ">
+            <div className="card d-flex flex-column items-center">
+              <Image
+                src="/images/shopify.png"
+                width={300}
+                height={300}
+                alt="shopify"
+              ></Image>
+              <h3>shopify</h3>
+              <p>
+                Launch your Shopify store with all the essential tools for
+                success.
+              </p>
+            </div>
+            <div className="card d-flex flex-column items-center">
+              <Image
+                src="/images/woo.png"
+                width={300}
+                height={300}
+                alt="shopify"
+              ></Image>
+              <h3>WooCommerce</h3>
+              <p>
+                Improve your WooCommerce capabilities and manage your store with
+                ease.
+              </p>
+            </div>
+            <div className="card d-flex flex-column items-center">
+              <Image
+                src="/images/dripify.png"
+                width={300}
+                height={300}
+                alt="shopify"
+              ></Image>
+              <h3>Dropify</h3>
+              <p>Inhance Your business work flow by connecting with dropify.</p>
+            </div>
+          </div>
+        </section>
+        <section className="faqs">
+          <div className="d-flex flex-column items-center justify-center">
+            <h2>Frequently Asked Questions</h2>
+            <p className="text-center">
+              Curious about how everything functions? Our FAQ section explains
+              it all. Discover the steps to create your own designs, place
+              orders, and have them shipped directly to you.
+            </p>
+          </div>
+          <FAQ />
+        </section>
+        <Footer />
       </Layout>
     </div>
   );
