@@ -1,0 +1,30 @@
+@use "../abstracts/variables" as *;
+.ps-sidebar-container {
+  .user-name {
+    display: flex;
+    background-color: $clr-primary-400;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    gap: 4rem;
+  }
+  .ps-menu-button {
+    background-color: $clr-neutral-500 !important;
+    color: black !important;
+    // a {
+    //   color: black;
+    //   text-decoration: none;
+    //   width: 100%;
+    // }
+    span {
+      display: flex !important;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &:hover {
+      background-color: $clr-primary-400 !important;
+    }
+  }
+}

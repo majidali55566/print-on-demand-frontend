@@ -1,15 +1,15 @@
 "use client";
-import { useState } from "react";
 import Link from "next/link.js";
 import LanguageDropDownMenu from "./LanguageDropDown.jsx";
+import { useState } from "react";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <nav className="nav-layout">
-      <h3>Brand Logo</h3>
-      <ul className={`navbar-menu ${isOpen ? "open" : ""}`}>
+    <nav className="general-nav-layout">
+      <h3>Brand</h3>
+
+      <ul className={isOpen ? "navbar-menu open" : ""}>
         <li>
           <Link href="/">Home</Link>
         </li>
